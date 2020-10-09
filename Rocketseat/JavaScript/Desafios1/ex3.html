@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript - Exercício 3</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Abra o console, amigão
+        </h1>
+    </div>
+    <script>
+        function temHabilidade(skills) {
+            var rest;
+            var idx = skills.indexOf("Javascript");
+            idx == 0 ? rest = true : rest = false;
+
+            console.log(rest);
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        temHabilidade(skills);
+    </script>
+</body>
+
+</html>

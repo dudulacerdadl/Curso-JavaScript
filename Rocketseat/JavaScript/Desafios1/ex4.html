@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript - Exercício 4</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Abra o console, amigão
+        </h1>
+    </div>
+    <script>
+        function experiencia(anos) {
+            var res;
+            if (anos >= 0 && anos <= 1) {
+                res = 'Iniciante';
+            } else if (anos <= 3) {
+                res = 'Intermediário';
+            } else if (anos <= 6) {
+                res = 'Avançado';
+            } else if (anos >= 7) {
+                res = 'Jedi Mestre';
+            } else {
+                res = 'Nem começou ainda';
+            }
+
+            console.log(res);
+        }
+
+        var anosEstudo = 5;
+        experiencia(anosEstudo);
+    </script>
+</body>
+
+</html>
